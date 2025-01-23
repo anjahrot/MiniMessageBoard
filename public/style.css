@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(17, 17, 49);
+    color: rgb(129, 159, 199);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.messageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.messageCard {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid grey;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message, .date {
+    color: grey;
+}
+
+.newBtn, .submitBtn {
+    padding: 8px 12px;
+    background-color: rgb(17, 17, 49);
+    color: rgb(129, 159, 199);
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.submitBtn {
+    margin-top: 10px;
+}
+
+.newBtn a, a {
+    text-decoration: none;
+    color: rgb(129, 159, 199);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 40%;
+}
+
+label {
+    padding-top: 10px;
+}
+
+input, textarea {
+    padding: 5px;
+}
+

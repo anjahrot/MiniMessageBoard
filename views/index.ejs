@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Message Board | Home </title>
 </head>
 <body>
+    <h1 class="heading">Messages</h1>
+    <div class="messageContainer">
+
     <% messages.forEach (message => { %>
-        <h3> <%= message.user %> </h3>
-        <p> <%= message.text %> </p>
-        <% const shortDate = message.added.toISOString().split('T')[0]; %>
+      <div class="messageCard">
+        <div class="cardHeader">
+            <h3 class="authorname"> <%= message.user %> </h3>
+            <a href="/details/<%= message.id %>"<span>Details</span></a>
+        </div>
+        <p class="message"> <%= message.text %> </p>
            
-        <p> <%= shortDate %> </p>
+        <p class="date"> <%= message.added %> </p>
+      </div>
     <% }) %> 
+    </div>
+    <button class="newBtn"><a href="/new"><span>New message</span></a></button>
 </body>
 </html>
