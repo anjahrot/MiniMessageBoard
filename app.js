@@ -7,8 +7,9 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 //static middleware, stylesheet
-const assetsPath = path.join(__dirname, "public");
-app.use(express.static(assetsPath));
+// const assetsPath = path.join(__dirname, "public");
+// app.use(express.static(assetsPath));
+app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
 

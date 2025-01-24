@@ -13,7 +13,7 @@ indexRouter.get("/new", (req,res) =>
 indexRouter.post("/new", postNewMessage);
 
 indexRouter.get("/", (req,res) => 
-  res.render("index", {title: 'Home', messages: messages})
+  res.render("index", {messages: messages})
 );
 
 indexRouter.get("/details/:messageId", getMessageDetails);

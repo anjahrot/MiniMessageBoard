@@ -8,7 +8,6 @@ async function getMessageDetails (req, res) {
 
   try {
   const messageDetails = await getMessageById(Number(messageId));
-  console.log(messageDetails);
   res.render("details", { message: messageDetails });
   } catch (error) {
     console.log(error);
