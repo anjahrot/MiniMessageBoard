@@ -6,9 +6,13 @@ const {getFormattedDateTime} = require('../utils/getFormattedDateTime')
 async function getMessageDetails (req, res) {
   const { messageId } = req.params;
 
+  try {
   const messageDetails = await getMessageById(Number(messageId));
-
+  console.log(messageDetails);
   res.render("details", { message: messageDetails });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 
