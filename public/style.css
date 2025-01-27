@@ -45,7 +45,7 @@ body {
     color: grey;
 }
 
-.newBtn, .submitBtn {
+.newBtn, .submitBtn, .homeBtn {
     padding: 8px 12px;
     background-color: rgb(17, 17, 49);
     color: rgb(129, 159, 199);
